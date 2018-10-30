@@ -9,8 +9,6 @@ body {
 .container {
   background-color: rgb(244, 244, 244);
   padding: 20px;
-  width: 1000px;
-
 }
 
 .container h1 {
@@ -18,12 +16,21 @@ body {
   text-align: center;
 }
 
-
-.form-check {
-  margin-top: 20px;
-}
-
 .link {
   margin: 20px;
 }
 
+#individual-tasks {
+  margin: 20px 0;
+}
+
+h3 {
+  background-color: rgb(235, 235, 235);
+  height: 100px;
+  display:flex;
+  align-items: center;
+}
+
+.form-check {
+  margin: 20px 0;
+}
