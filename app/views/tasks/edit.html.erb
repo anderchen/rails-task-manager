@@ -14,9 +14,9 @@
     <%= f.text_field :details, class: "form-control"%>
     </div>
 
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="completed-checkbox-edit">
-      <label for="completed-checkbox" class="form-check-label">Completed </label>
+    <div class="form-check-checkbox">
+      <%= f.check_box :completed %>
+      <%= f.label "Completed" %>
     </div>
 
     <%= f.submit class: "btn btn-primary"%>
