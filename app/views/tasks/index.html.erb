@@ -1,0 +1,27 @@
+<div class="wrapper">
+  <div class="container">
+    <h1>My Tasks</h1>
+    <div class="tasks">
+      <% @tasks.each do |task| %>
+        <div class="form-check">
+          <% if task.completed == true %>
+            <i class="far fa-check-circle"></i>
+          <% else %>
+             <i class="far fa-circle"></i>
+          <% end %>
+          <label class="form-check-label" for="defaultCheck1">
+            <%= link_to task.title, task_path(task) %>
+          </label>
+          <i class="far fa-trash-alt"><%= link_to "Delete", task_path(task),
+          method: :delete,
+          data: { confirm: "Are you sure?" } %></i>
+
+        </div>
+      <% end %>
+    </div>
+
+    <div class="link">
+      <i class="fas fa-plus">  <%= link_to "Add new task", new_task_path %></i>
+    </div>
+  </div>
+</div>
